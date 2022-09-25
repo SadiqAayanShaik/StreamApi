@@ -39,10 +39,13 @@ public class StreamObject {
 			System.out.println("Squares: ");
 			list2.stream().map(i->i*i).forEach(System.out::println);
 			
+			
 			list2.stream().sorted().forEach(System.out::println);
+			
 			
 			int min=list2.stream().min((x,y)->x.compareTo(y)).get();
 			System.out.println("Min:"+min);
+			
 			
 			int max=list2.stream().max((x,y)->x.compareTo(y)).get();
 			System.out.println("Max Number:"+max);
